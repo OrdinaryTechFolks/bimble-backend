@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: bimble-backend
-          image: huseinnashr/bimble-backend:#{FEATURE_ID}-feature
+          image: 0.0.0.0:30001/bimble-backend:#{FEATURE_ID}-feature
           imagePullPolicy: Always
           command: ['./bin/app-api', '-config=./files/config/feature.yaml']
           envFrom:
