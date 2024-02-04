@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: bimble-backend
-          image: huseinnashr/bimble-backend:#{RELEASE_VERSION}
+          image: 0.0.0.0:30001/bimble-backend:#{RELEASE_VERSION}
           imagePullPolicy: Always
           command: ['./bin/app-api', '-config=./files/config/prod.yaml']
           envFrom:
